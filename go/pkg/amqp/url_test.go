@@ -33,7 +33,7 @@ func ExampleParseURL() {
 		"/path",
 		"",
 		":1234",
-                // Taken out because the go 1.4 URL parser isn't the same as later
+		// Taken out because the go 1.4 URL parser isn't the same as later
 		//"[::1]",
 		//"[::1",
 		// Output would be:
@@ -55,5 +55,5 @@ func ExampleParseURL() {
 	// amqps://host:amqps
 	// amqp://localhost:amqp/path
 	// amqp://localhost:amqp
-	// parse :1234: missing protocol scheme
+	// parse ":1234": missing protocol scheme
 }
