@@ -32,6 +32,7 @@ func ExampleParseURL() {
 		"amqps://host",
 		"/path",
 		"",
+		// Taken out because url.Parse error formatting changed in 1.13
 		":1234",
 		// Taken out because the go 1.4 URL parser isn't the same as later
 		//"[::1]",
@@ -55,5 +56,4 @@ func ExampleParseURL() {
 	// amqps://host:amqps
 	// amqp://localhost:amqp/path
 	// amqp://localhost:amqp
-	// parse ":1234": missing protocol scheme
 }
